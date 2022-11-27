@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.supplychain.HeaderController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#205f86" height="72.0" layoutX="-8.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="510.0" />
+      <TextField fx:id="searchtext" layoutX="34.0" layoutY="23.0" />
+      <Button layoutX="195.0" layoutY="23.0" mnemonicParsing="false" onMouseClicked="#search" text="Search" />
+      <Button fx:id="loginButton" layoutX="398.0" layoutY="23.0" mnemonicParsing="false" onMouseClicked="#login" text="Login" />
+      <Label fx:id="email" layoutX="421" layoutY="23" onMouseClicked="#logout" />
+      <Button fx:id="logoutButton" layoutX="393.0" layoutY="48.0" mnemonicParsing="false" opacity="0" text="Log out" />
+      <ScrollPane layoutX="5.0" layoutY="76.0" prefHeight="419.0" prefWidth="490.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+        </content>
+      </ScrollPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="433.0" layoutX="-5.0" layoutY="68.0" stroke="BLACK" strokeType="INSIDE" width="510.0" />
+   </children>
+</AnchorPane>
